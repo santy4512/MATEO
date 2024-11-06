@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomía Total - Aprende Fácilmente</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .hero {
+            background-image: url('anatomia_web.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.8rem;
+        }
+
+        .section-title {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .cta {
+            background-color: #007bff;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .cta button {
+            margin-top: 20px;
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            border: none;
+            background-color: #ffc107;
+            color: #000;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .carousel-item img {
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Anatomía Total</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="basica.html" >Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonios.html">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 style="color: #000;">Conviértete en un experto en Anatomía</h1>
+            <p style="color: #000;">Aprende de forma fácil y profesional con nuestros cursos online.</p>
+            <a href="#cursos" class="btn btn-warning btn-lg">Ver Cursos</a>
+        </div>
+    </section>
+
+    <!-- Sección de Cursos con Carrusel -->
+    <section id="cursos" class="container">
+        <h2 class="section-title">Nuestros Cursos</h2>
+        <div id="carouselCursos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Curso 1 -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="rodilla.jpeg" class="card-img-top" alt="Curso Anatomía Básica">
+                                <div class="card-body">
+                                    <h5 class="card-title">Anatomía Básica</h5>
+                                    <p class="card-text">Este curso es perfecto para aquellos que desean comenzar a aprender sobre el cuerpo humano. Cubriremos temas fundamentales como los sistemas óseo, muscular y nervioso, así como la anatomía general. A través de ilustraciones claras y explicaciones detalladas, te familiarizarás con las estructuras más importantes de nuestro cuerpo.</p>
+                                    <p class="card-text">Al finalizar, serás capaz de identificar y comprender las funciones de los principales órganos y sistemas del cuerpo humano. Además, aprenderás sobre las enfermedades más comunes asociadas a estos sistemas y cómo prevenirlas.</p>
+                                    <a href="basica.html" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="torax.jpeg" class="card-img-top" alt="Curso Anatomía Avanzada">
+                                <div class="card-body">
+                                    <h5 class="card-title">Anatomía Avanzada</h5>
+                                    <p class="card-text">Este curso es para estudiantes que ya tienen una comprensión básica de la anatomía humana y desean profundizar más en temas avanzados. Estudiaremos de manera detallada los sistemas circulatorio, respiratorio y endocrino, con un enfoque en las conexiones entre estos y su influencia en el funcionamiento del cuerpo.</p>
+                                    <p class="card-text">El curso también incluye una sección sobre los avances más recientes en la investigación anatómica, lo que te permitirá estar al día con los estudios más actuales y las tecnologías emergentes en el campo de la anatomía.</p>
+                                    <a href="avanzada.html" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="ojos.jpg" class="card-img-top" alt="Curso Fisiología Humana">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fisiología Humana</h5>
+                                    <p class="card-text">Este curso se enfoca en la fisiología del cuerpo humano, es decir, cómo funcionan los diversos sistemas en su funcionamiento normal. Veremos el metabolismo, la digestión, la circulación sanguínea, y la interacción entre los diferentes órganos. Comprenderás cómo las enfermedades pueden alterar estos procesos y cómo se utilizan tratamientos médicos para restaurar el equilibrio fisiológico.</p>
+                                    <p class="card-text">Con ejemplos prácticos y simulaciones, el curso te ayudará a entender cómo el cuerpo humano se adapta a diferentes situaciones, como el ejercicio o el estrés. Este conocimiento es fundamental para quienes deseen trabajar en áreas de la salud como la medicina, fisioterapia o nutrición.</p>
+                                    <a href="curso-fisiologia.html" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Curso 2 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images (2).jpeg" class="card-img-top" alt="Curso Bioquímica Avanzada">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bioquímica Avanzada</h5>
+                                    <p class="card-text">Este curso está diseñado para aquellos interesados en profundizar en la bioquímica del cuerpo humano. Estudiaremos los procesos bioquímicos involucrados en la digestión, la producción de energía, la regulación hormonal y la respuesta inmunológica. Se proporcionarán ejemplos prácticos de cómo estos procesos afectan la salud y cómo se pueden tratar las alteraciones bioquímicas.</p>
+                                    <p class="card-text">Además, te introduciremos en el uso de tecnologías avanzadas para estudiar la bioquímica, como la espectrometría de masas y la resonancia magnética nuclear, herramientas clave en la investigación médica moderna.</p>
+                                    <a href="bioquimica-avanzada.html" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="cora.JPG" class="card-img-top" alt="Curso Neurología Humana">
+                                <div class="card-body">
+                                    <h5 class="card-title">Neurología Humana</h5>
+                                    <p class="card-text">En este curso profundizarás en la estructura y función del sistema nervioso, con un enfoque en las últimas investigaciones en neurociencia. Estudiaremos el cerebro, la médula espinal, los nervios y cómo estos sistemas controlan las funciones corporales, desde el movimiento hasta las emociones y la cognición.</p>
+                                    <p class="card-text">Este curso también aborda trastornos neurológicos comunes como el Alzheimer, la esclerosis múltiple y los accidentes cerebrovasculares, brindándote una comprensión detallada de cómo se diagnostican y tratan estos trastornos.</p>
+                                    <a href="neurologia.html" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="pngtree-3d-human-brain-anatomy-on-transparent-background-png-image_13242040.png" class="card-img-top" alt="Curso Anatomía Muscular">
+                                <div class="card-body">
+                                    <h5 class="card-title">Anatomía Muscular</h5>
+                                    <p class="card-text">Este curso se enfoca en la anatomía de los músculos humanos. Aprenderás sobre los diferentes tipos de músculos, su estructura y función, y cómo estos contribuyen al movimiento y a la estabilidad del cuerpo. Además, cubriremos aspectos prácticos como la rehabilitación muscular y el entrenamiento deportivo.</p>
+                                    <p class="card-text">Al final del curso, serás capaz de identificar los principales músculos del cuerpo humano y comprender cómo la fisiología muscular se aplica en áreas como la medicina deportiva, la fisioterapia y el ejercicio físico.</p>
+                                    <a href="anatomia-muscular.html" class="btn btn-primary">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCursos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCursos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección CTA (Llamado a la acción) -->
+    <section class="cta">
+        <div class="container">
+            <h2>Comienza a aprender hoy mismo</h2>
+            <p>Inscríbete en nuestros cursos y lleva tus conocimientos a un nivel superior.</p>
+            <a href="#contacto" class="btn btn-warning btn-lg">Contáctanos para más detalles</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Anatomía Total. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

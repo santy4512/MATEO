@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomía Avanzada - Anatomía Total</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .hero {
+            background-image: url('anatomia-e1552092686333.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .section-title {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .card {
+            margin-bottom: 30px;
+        }
+
+        .cta {
+            background-color: #007bff;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+        }
+
+        .cta button {
+            margin-top: 20px;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            border: none;
+            background-color: #ffc107;
+            color: #000;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Anatomía Total</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="basica.html">Básica</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="avanzada.html">Avanzada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonios.html">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 style="color: #000;">Anatomía Avanzada</h1>
+            <p style="color: #000;">Explora las complejidades del cuerpo humano en detalle con nuestro curso avanzado.</p>
+            <a href="#cursos" class="btn btn-warning btn-lg">Ver Detalles del Curso</a>
+        </div>
+    </section>
+
+    <!-- Sección de Información del Curso -->
+    <section id="cursos" class="container">
+        <h2 class="section-title">Detalles del Curso</h2>
+        <div class="row">
+            <!-- Sistema Nervioso -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="SNC.png"card-img-top" alt="Sistema Nervioso">
+                    <div class="card-body">
+                        <h5 class="card-title">Sistema Nervioso</h5>
+                        <p class="card-text">El sistema nervioso es responsable de controlar y coordinar las funciones del cuerpo. Aprende cómo los impulsos nerviosos viajan a través del cuerpo y cómo interactúan con los sistemas corporales para generar movimientos y sensaciones.</p>
+                        <a href="detalle-sistema-nervioso.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sistema Circulatorio -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="cora.JPG" class="card-img-top" alt="Sistema Circulatorio">
+                    <div class="card-body">
+                        <h5 class="card-title">Sistema Circulatorio</h5>
+                        <p class="card-text">El sistema circulatorio transporta nutrientes, oxígeno y desechos a través del cuerpo. Estudia el corazón, los vasos sanguíneos y cómo la sangre fluye para mantener el cuerpo en equilibrio.</p>
+                        <a href="detalle-sistema-circulatorio.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sistema Digestivo -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="digestivo.avif" class="card-img-top" alt="Sistema Digestivo">
+                    <div class="card-body">
+                        <h5 class="card-title">Sistema Digestivo</h5>
+                        <p class="card-text">El sistema digestivo es fundamental para descomponer los alimentos y absorber los nutrientes necesarios para la energía. Aprende sobre los órganos involucrados en este proceso crucial.</p>
+                        <a href="detalle-sistema-digestivo.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sistema Respiratorio -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="respira.avif" class="card-img-top" alt="Sistema Respiratorio">
+                    <div class="card-body">
+                        <h5 class="card-title">Sistema Respiratorio</h5>
+                        <p class="card-text">Estudia el sistema respiratorio que nos permite inhalar oxígeno y exhalar dióxido de carbono, vital para el funcionamiento de todos los órganos.</p>
+                        <a href="detalle-sistema-respiratorio.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección CTA (Llamado a la acción) -->
+    <section class="cta">
+        <div class="container">
+            <h2 style="color: #000;">Profundiza tu conocimiento de la anatomía humana</h2>
+            <p style="color: #000;">Si estás listo para llevar tu conocimiento de la anatomía al siguiente nivel, inscríbete en nuestro curso avanzado ahora mismo.</p>
+            <a href="comprar.html" class="btn btn-lg" style="color: #000;">Inscribirse al Curso</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Anatomía Total. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
